@@ -1,0 +1,31 @@
+{
+  "name": "html-prefixer",
+  "version": "1.0.0",
+  "description": "prefix class names and/or ids in html markup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medullan/html-prefixer.git"
+  },
+  "keywords": [
+    "prefixer",
+    "html",
+    "class",
+    "classnames",
+    "id",
+    "ids",
+    "processor",
+    "htmltree"
+  ],
+  "author": "Layton Whiteley",
+  "license": "MIT",
+  "dependencies": {
+    "htmltree": "0.0.4",
+    "htmltree-stringify": "^1.0.0",
+    "lodash": "^4.11.1",
+    "q": "^1.4.1"
+  }
+}
