@@ -1,6 +1,6 @@
 {
   "name": "html-class-prefixer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "prefix class names and/or ids in html markup",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "author": "Layton Whiteley",
   "license": "MIT",
   "dependencies": {
+    "deasync": "^0.1.4",
     "htmltree": "0.0.4",
     "htmltree-stringify": "^1.0.0",
     "lodash": "^4.11.1",

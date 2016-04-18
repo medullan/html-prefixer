@@ -2,7 +2,7 @@ var htmltree = require("htmltree"),
     q = require("q"),
     _ = require("lodash"),
     stringify = require("htmltree-stringify");
-
+var sync = require('synchronize')
 var traverse = function(node, options){
   if(_.isArray(node)){
     _.forEach(node, function(value){
@@ -72,5 +72,21 @@ var service = function(html, options){
   }
   return defer.promise;
 };
+
+service.sync = function(html, options){
+  var result = '', done = false;
+  service(html, options)
+    .then(function(val){
+      result = val;
+      done = true;
+    })
+    .fail(function(val){
+      result = val;
+      done = true;
+    })
+
+  require('deasync').loopWhile(function(){return !done;});
+  return result;
+}
 
 module.exports = service;
