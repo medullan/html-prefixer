@@ -2,7 +2,7 @@ var htmltree = require("htmltree"),
     q = require("q"),
     _ = require("lodash"),
     stringify = require("htmltree-stringify");
-var sync = require('synchronize')
+    
 var traverse = function(node, options){
   if(_.isArray(node)){
     _.forEach(node, function(value){
