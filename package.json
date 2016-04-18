@@ -1,5 +1,5 @@
 {
-  "name": "html-prefixer",
+  "name": "html-class-prefixer",
   "version": "0.0.1",
   "description": "prefix class names and/or ids in html markup",
   "main": "index.js",
@@ -18,7 +18,8 @@
     "id",
     "ids",
     "processor",
-    "htmltree"
+    "htmltree",
+    "html-class-prefixer"
   ],
   "author": "Layton Whiteley",
   "license": "MIT",

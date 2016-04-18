@@ -1,11 +1,11 @@
-html-prefixer
+html-class-prefixer
 ============
 prefix class names and IDs (optionally) in html strings
 
 how to use
 
 ```js
-var prefixer = require('html-prefixer')
+var prefixer = require('html-class-prefixer')
 
 var html = '<div id="container"><span onclick=foo class="sdsd test-texg test"></span></div>';
 prefixer(html,
